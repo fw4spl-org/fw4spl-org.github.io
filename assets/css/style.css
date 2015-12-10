@@ -89,3 +89,10 @@ footer {
 .date span {
     font-weight: normal;
 }
+
+
+@media (max-width: 800px) {
+  #content li {
+    width: calc(100% - 56px);
+  }
+}
