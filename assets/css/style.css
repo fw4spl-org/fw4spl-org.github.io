@@ -1,0 +1,91 @@
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+footer {
+    margin: 50px 0;
+}
+
+#content a:link {
+    text-decoration: none;
+}
+
+#content a:visited {
+    text-decoration: none;
+}
+
+#content a:hover {
+    text-decoration: none;
+}
+
+#content a:active {
+    text-decoration: none;
+}
+
+#content {
+    margin: 10px auto;
+}
+
+#content li {
+    display: inline-block;
+    cursor: pointer;
+    width: 444px;
+    margin: 20px;
+    padding: 8px;
+    vertical-align: top;
+    border-radius: 2px;
+    width: calc(50% - 56px);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+#content li img {
+    position: absolute;
+    margin: -20px 0 0 -20px;
+    border-radius: 12px;
+}
+
+#content li p {
+    color: #646464;
+}
+
+#content li:hover {
+    background: #fcfcfc;
+    background-image: linear-gradient(to bottom right, #f9f9f9 25%, #ffffff);
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.2);
+}
+
+#content li:hover h2 {
+    border-bottom: 1px solid #0051A2;
+}
+
+.name {
+    font: normal 15px/20px;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 50px;
+}
+
+.language {
+    color: #1A1A1A;
+    font-weight: bold;
+    text-align: right;
+    padding: 6px 0;
+    height: 16px;
+}
+
+.description {
+    padding-bottom: 16px;
+}
+
+.date {
+    width: 300px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.date span {
+    font-weight: normal;
+}
