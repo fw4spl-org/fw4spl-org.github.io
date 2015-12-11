@@ -60,7 +60,7 @@ $(".nav a").on("click", function () {
 $("#orderby a").on("click", function () {
     var selection = $(this).attr('id');
     m_repos = _.sortBy(m_repos, selection);
-    if (selection === 'updated_at') {
+    if (selection === 'pushed_at') {
         m_repos = m_repos.reverse();
     }
     loadRepos();
