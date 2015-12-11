@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -16,42 +16,40 @@
 </head>
 <body>
 
-<div class="container">
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">FW4SPL</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#repos">Repos</a>
-                    </li>
-                    <li>
-                        <a href="#about">Team</a>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="http://fw4spl-org.github.io/fw4spl-blog/">Blog</a>
-                    </li>
-                    <li>
-                        <a href="http://fw4spl-doc.readthedocs.org/">Doc</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">FW4SPL</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#repos">Repos</a>
+                        </li>
+                        <li>
+                            <a href="#about">Team</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://fw4spl-org.github.io/fw4spl-blog/">Blog</a>
+                        </li>
+                        <li>
+                            <a href="http://fw4spl-doc.readthedocs.org/">Doc</a>
+                        </li>
+                    </ul>
+                </div> <!-- /.navbar-collapse -->
+            </div> <!-- /.container -->
+        </nav>
     </div>
 
     <!-- carousel -->
@@ -104,18 +102,9 @@
         </a>
     </div>
 
+
     <!-- Page Content -->
     <div class="container">
-
-        <!-- Page Header -->
-        <!-- <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    FW4SPL community<br />
-                    <small>We work hard to contribute to the health visualization community.</small>
-                </h1>
-            </div>
-        </div> -->
 
         <div class="row" id="stats">
             <div class="col-lg-12">
@@ -153,39 +142,39 @@
                 <h1>Team</h1>
                 <div id="members">
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Footer -->
-            <footer>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p>FW4SPL RD Team</p>
-                    </div>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>FW4SPL RD Team</p>
                 </div>
-            </footer>
+            </div>
+        </footer>
+    </div> <!-- /.container -->
 
-        </div>
-        <!-- /.container -->
-        <!-- jQuery -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <!-- Bootstrap -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <!-- Lodash -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
-        <!-- Mustache -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
-        <!-- Template -->
-        <script id="repoTemplate" type="text/x-custom-template">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Lodash -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
+    <!-- Mustache -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.2.0/mustache.min.js"></script>
+    <!-- Template -->
+    <script id="repoTemplate" type="text/x-custom-template">
         <li>
-        <a href="{{url}}" target="_blank">
-        <img src="assets/img/fw4spl.png" />
-        <h2 class="name">{{name}}</h2>
-        <p class="language">{{language}}</p>
-        <p class="description">{{description}}</p>
-        <p class="date">Last commit: <span>{{date}}</span></p>
-        </a>
+            <a href="{{url}}" target="_blank">
+                <img src="assets/img/fw4spl.png" />
+                <h2 class="name">{{name}}</h2>
+                <p class="language">{{language}}</p>
+                <p class="description">{{description}}</p>
+                <p class="date">Last commit: <span>{{date}}</span></p>
+            </a>
         </li>
-        </script>
-        <script src="assets/js/app.js"></script>
-    </body>
-    </html>
+    </script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
